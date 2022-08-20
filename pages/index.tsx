@@ -7,7 +7,7 @@ import { ComponentList } from '../utils/constants';
 
 const Home: NextPage = () => {
   return (
-    <Box sx={{ bgcolor: "primary.main", height: "100vh", flexGrow: 1, padding: 2 }}>
+    <Box sx={{ height: "100vh", flexGrow: 1, padding: 2 }}>
       <Navbar/>
       <Grid container spacing={1}>
         <CustomGrid spacing={2} columsWidth={4} data={ComponentList} />

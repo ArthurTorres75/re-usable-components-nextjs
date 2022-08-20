@@ -10,13 +10,14 @@ interface Props {
 }
 
 const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
+  backgroundColor: theme.palette.primary.main,
   ...theme.typography.body2,
   padding: theme.spacing(1),
+  fontWeight: '600',
   textAlign: "center",
   color: theme.palette.text.secondary,
   cursor: 'pointer',
-  ":hover": { backgroundColor: 'white', color: 'black' }
+  ":hover": { backgroundColor: theme.palette.secondary.main, color: 'grey',  }
 }));
 
 export const CustomGrid: FC<Props> = ({
